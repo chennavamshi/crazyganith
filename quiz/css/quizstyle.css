@@ -1,0 +1,48 @@
+/*input[type=radio].rads {
+display:none;
+}
+
+						input[type=radio].rads + label.css-label {
+							padding-left:29px;
+
+							display:inline-block;
+
+							background-repeat:no-repeat;
+							background-position: 0 0;
+							vertical-align:middle;
+							cursor:pointer;
+
+						}
+
+						input[type=radio].rads:checked + label.css-label {
+							background-position: 0 -24px;
+						}
+						label.css-label {
+				background-image:url('../img/checkbox.png');
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+                                                */
+div .res {
+border:2px solid #a1a1a1;
+padding:10px 40px;
+background-image:url('../img/quizback.jpg');
+background-size: 100% 100%;
+
+
+width:700px;
+height:500px;
+vertical-align: middle;
+border-radius:10px;
+margin-left: auto ;
+  margin-right: auto ;
+}
+div table {
+vertical-align: middle;
+margin-top: 20% ;
+  margin-bottom: 30%;
+}
