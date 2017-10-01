@@ -1,0 +1,97 @@
+/*input[type=radio].rads {
+display:none;
+}
+
+						input[type=radio].rads + label.css-label {
+							padding-left:29px;
+
+							display:inline-block;
+
+							background-repeat:no-repeat;
+							background-position: 0 0;
+							vertical-align:middle;
+							cursor:pointer;
+
+						}
+
+						input[type=radio].rads:checked + label.css-label {
+							background-position: 0 -24px;
+						}
+						label.css-label {
+				background-image:url('../img/checkbox.png');
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+                                                */
+div .res {
+border:2px solid grey;
+padding:10px 40px;
+background-image:url('../img/quizback.jpg');
+background-size: 100% 100%;
+font-size:18px;
+width:700px;
+height:500px;
+vertical-align: middle;
+border-radius:10px;
+margin-left: auto ;
+  margin-right: auto ;
+  color:grey;
+}
+#quiz{
+margin-left: 23%;
+  margin-right: 10% ;
+}
+div table {
+font-family:"Sans-serif";
+vertical-align: middle;
+margin-top: 20% ;
+  margin-bottom: 30%;
+}
+.calc{
+margin-top : -450px;
+
+
+}
+body{
+background-color:#f0f0f0;
+}
+
+.myButton {
+	-moz-box-shadow: 0px 11px 0px -50px #276873;
+	-webkit-box-shadow: 0px 11px 0px -50px #276873;
+	box-shadow: 0px 11px 0px -50px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e3e3e3), color-stop(1, #e2eaeb));
+	background:-moz-linear-gradient(top, #e3e3e3 5%, #e2eaeb 100%);
+	background:-webkit-linear-gradient(top, #e3e3e3 5%, #e2eaeb 100%);
+	background:-o-linear-gradient(top, #e3e3e3 5%, #e2eaeb 100%);
+	background:-ms-linear-gradient(top, #e3e3e3 5%, #e2eaeb 100%);
+	background:linear-gradient(to bottom, #e3e3e3 5%, #e2eaeb 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e3e3', endColorstr='#e2eaeb',GradientType=0);
+	background-color:#e3e3e3;
+	display:inline-block;
+	cursor:pointer;
+	color:#331f33;
+	font-family:arial;
+	font-size:13px;
+	padding:3px 12px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #3d768a;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e2eaeb), color-stop(1, #e3e3e3));
+	background:-moz-linear-gradient(top, #e2eaeb 5%, #e3e3e3 100%);
+	background:-webkit-linear-gradient(top, #e2eaeb 5%, #e3e3e3 100%);
+	background:-o-linear-gradient(top, #e2eaeb 5%, #e3e3e3 100%);
+	background:-ms-linear-gradient(top, #e2eaeb 5%, #e3e3e3 100%);
+	background:linear-gradient(to bottom, #e2eaeb 5%, #e3e3e3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2eaeb', endColorstr='#e3e3e3',GradientType=0);
+	background-color:#e2eaeb;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

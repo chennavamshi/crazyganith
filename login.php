@@ -1,16 +1,4 @@
 <?php
-$openid = new LightOpenID("http://localhost/synapse2013/Synapse2014Latest/Changes/crazy/");
-$openid->identity = 'https://www.google.com/accounts/o8/id';
-$openid->required = array(
-  'namePerson/first',
-  'namePerson/last',
-  'contact/email',
-  'person/gender',
-);
-$openid->returnUrl = 'http://localhost/synapse2013/Synapse2014Latest/Changes/crazy/login.php';
-?>
-
-<?php
 $msg = "";
 if(isset($_POST['username']) && isset($_POST['pass'])) {
   $username = test_input($_POST['username']);;
@@ -29,7 +17,8 @@ if(isset($_POST['username']) && isset($_POST['pass'])) {
       $_SESSION['user_id'] = $user_id;
       $_SESSION['mode'] = 0;
       $_SESSION['username'] = $username;
-      header('Location:index.php');
+      //$msg = "Sorry the event has been started.You cannot login Now!";
+      //header('Location:index.php');
       }
     }
   }
@@ -150,11 +139,8 @@ if(isset($_POST['username']) && isset($_POST['pass'])) {
 					<button type="submit" class="button">Log in</button>
 					<a href="register.php" class="button">  Register  </button> </a>
 
-                                        <br>   <br /> <br />
-
-
-
-                <div align="right">
+                                        <br>
+                                               <div align="right">
              <a href="<?php echo $openid->authUrl() ?>" class = "button">Login with Google</a>
              </div>
     </form>
@@ -183,7 +169,7 @@ if(isset($_POST['username']) && isset($_POST['pass'])) {
                     Max Time :1 Hour<br >
                     Your question will be skipped if you have not selected any option.<br >
                     +3 points for every CORRECT answer                                     <br >
-                    -3 points for every INCORRECT answer                                        <br >
+                    -2 points for every INCORRECT answer                                        <br >
                     0 points for skipping a question                                                 <br >
                     Participants can not go back to any previous questions. <br>                              <br >
                     <b>Final round</b>                                                                               <br >
@@ -202,9 +188,10 @@ if(isset($_POST['username']) && isset($_POST['pass'])) {
                     <img float="left"  style="border-radius:8px;"src="img/rules2.jpg" alt="Image">
 					<br>
 					<h2 style="width:370px; height: 180px; border-radius: 10px; background-color:#ffffcc; padding-top:60px; text-align:center;"> <span style="text-decoration:underline;">Event Details </span> <br>
-					  <p> First Round: 24th Feb<br>
-					     Second Round: 26th Feb<br>
-						 Timings will be announced soon</p></h2>
+					  <br>
+                                          <p style="font-size:18px"> First Round: 24th Feb 8:00 - 9:00 P.M<br>
+					     Second Round: 26th Feb 8:00 - 9:00 P.M<br>
+						 </p></h2>
 
                 </div>
              </div>

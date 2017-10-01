@@ -84,7 +84,8 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <nav class="pull-right nav-collapse collapse">
               <ul id="menu-main" class="nav">
-                 <li><a title="contact" href="login.php"><?php echo $_SESSION['username']; ?></a></li>
+                  <li><a title="Logout" href="index.php"><?php echo $_SESSION['username'];?></a></li>
+                  <!-- <li><a title="Logout" href="user_result.php">My Result</a></li>-->
                  <li><a title="Logout" href="logout.php">Logout</a></li>
               </ul>
             </nav>
@@ -97,20 +98,8 @@
     <div text-color = "red">
     <?php echo "Message :".$msg; $msg = ""; ?>
     </div>
-    <div id = "oudiv">
-  <section id = "outtimer">
-    <h1>Crazy Ganith</h1>
-    <div id = "time">Starts in<br><br></div>
-    <section class="countdown">
-      <div id = "time"><div id="d"></div>days</div>
-      <div id = "time"><div id="h"></div>hours</div>
-      <div id = "time"><div id="m"></div>min</div>
-      <div id = "time"><div id="s"></div>sec</div>
-    </section>
-	</section>
-	</div>
   <script src='js/script.js'></script>
-    <div align ="right"><a class = "classname" href = 'quiz\index.php'>Give a Sample Quiz</a></div>
+    <div align ="right"><a class = "classname" href = 'quiz/index.php'>Give the Quiz</a></div>
     </div>
     </body>
-    
+    <html>

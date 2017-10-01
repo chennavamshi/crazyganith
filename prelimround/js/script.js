@@ -4,12 +4,11 @@ var current_year = now.getFullYear();
 var next_year = current_year + 1;
 
 // Set the date we're counting down to.
-var target_date = new Date("Feb 24, " + current_year).getTime();
-target_date = target_date + 72000000;
+var target_date = new Date().getTime()+8000;
 
 // Variables for time units.
 var days, hours, minutes, seconds;
- 
+
 // Get the elements that will hold the numbers.
 var $days = document.getElementById("d");
 var $hours = document.getElementById("h");
@@ -21,7 +20,7 @@ function update() {
     // Find the amount of "seconds" between now and target.
     var current_date = new Date().getTime();
     var seconds_left = (target_date - current_date) / 1000;
- 
+
     // Do some time calculations.
     days = parseInt(seconds_left / 86400);
     seconds_left = seconds_left % 86400;
@@ -37,6 +36,10 @@ function update() {
     $hours.innerHTML = pad(hours, 2);
     $minutes.innerHTML = pad(minutes, 2);
     $seconds.innerHTML = pad(seconds, 2);
+    if(minutes==0 && seconds ==0)
+    window.location="index.html";
+
+
 }
 
 // Immediately update the HTML.

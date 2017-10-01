@@ -2,7 +2,7 @@
 require_once 'openid.php';
 require_once 'connect.inc.php';
 require_once 'core.inc.php';
-$openid = new LightOpenID("index.php");
+$openid = new LightOpenID("http://localhost/crazy/index.php");
 
 if ($openid->mode) {
     if ($openid->mode == 'cancel') {
@@ -24,20 +24,22 @@ if ($openid->mode) {
                 $query = "INSERT INTO `google_user` VALUES ('', '".$email."' ,'".$first."', '".$last."')";
                 if(mysql_query($query)){
                   $_SESSION['user_id'] = $email;
+                  $_SESSION['username'] = $email;
                   $_SESSION['mode'] = 1;
                   echo "Entered No of Rows = 0 ";
                   //echo "Session ID :".$_SESSION['user_id'];
                   //echo "Session ID :".$_SESSION['user_id'];
-                  header('Location: index.php');
+                  header('Location: ../index.php');
                  }
                  else
                  echo "Came Here";
             }
             else if($query_num_rows == 1){
             $_SESSION['user_id'] = $email;
+            $_SESSION['username'] = $email;
             $_SESSION['mode'] = 1;
             echo 'suceeded';
-            header('Location: index.php');
+            header('Location: ../index.php');
             }
         }
         /*echo "Identity: $openid->identity <br>";

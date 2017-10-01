@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Add Questions</title>
+</head>
+<body>
+<article>
+<strong>
+<form action = 'addq.php' method = 'POST'>
+	    <label for="Question">Question:</label>  <br/>
+            <textarea name = "ques" cols="50" id="ques"></textarea><br/><br/>
+		<label for="o1">Option 1 :</label>  <br/>
+            <input name = "o1" type="text" size="40" id="o2" /><br/><br/>
+        	<label for="o2">Option 2 :</label><br/>
+            <input name = "o2" type="text" size="40" id="o2" /> <br/><br/>
+        	<label for="o3">Option 3 :</label><br/>
+            <input name = "o3" type="text" size="40" id="o3" /> <br/><br/>
+            <label for="o4">Option 4 :</label>   <br/>
+            <input name = "o4" type="text" size="40" id="o4" /> <br/> <br/>
+            <label for="ans" >Answer:</label>     <br/>
+            <select id="ans" name = "ans">
+                <option value = "o1">Option 1</option>
+                <option value = "o2">Option 2</option>
+                <option value = "o3">Option 3</option>
+                <option value = "o4">Option 4</option>
+            </select>
+            </strong>
+    <p>
+        <button type="submit" class="action">Add Question</button>
+
+    </p>
+</form>
+</article>
